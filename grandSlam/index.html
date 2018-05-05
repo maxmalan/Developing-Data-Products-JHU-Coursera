@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grand Slam men's single champions in the Open Era</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Grand Slam men's single champions in the Open Era">
+  <meta name="author" content="Massimo Malandra">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="http://slidifylibraries2.googlecode.com/git/inst/libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="http://slidifylibraries2.googlecode.com/git/inst/libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/js/slides" 
+    src="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Grand Slam men's single champions in the Open Era</h1>
+    <h2>A data visualization from 1968 to 2018</h2>
+    <p>Massimo Malandra<br/>Data Scientist</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <style>
+
+slides > slide {
+    background: #F5FFFA;
+}
+
+.title-slide {
+  background-color: #A2CD5A;
+}
+
+.title-slide hgroup > h1, 
+.title-slide hgroup > h2 {
+  color: #FFFFFF ;
+}
+
+em {
+  font-style: italic
+}
+
+strong {
+  font-weight: bold;
+}
+
+bigger {
+  font-size: 125%;
+  font-style: italic;
+  color: #AA9A39;
+   }
+
+</style>
+
+<h2>The Open Era winners</h2>
+
+<p><br/></p>
+
+<p>This application contains an illustration of <strong>all the Grand Slam men&#39;s single champions in the Open Era</strong>.
+<br/></p>
+
+<p>The analysis includes all Grand Slam tournaments from <b>1968</b> (excluding Australian Open of the same year, who was still under the Non-Open Era) to <b>2018</b>, and it is updated up to May 3rd 2018, hence the only 2018 Grand Slam tournament taken into account is the Australian Open, played last January in Melbourne.
+<br/></p>
+
+<p>Notice that 1977 Australian Open was played twice in the same year, in January and December.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Prize Money</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Prize money information was mainly taken from the following link:
+<br/>
+<a href="https://github.com/popovichN/grand-slam-prize-money">https://github.com/popovichN/grand-slam-prize-money</a>
+<br/>
+Thanks to the data gathered and made available by Nadja Popovich, and her extremely interesing article for the Guardian US:
+<br/></p>
+
+<p><em>&quot;Battle of the sexes: charting how women in tennis achieved equal pay&quot;</em>, Nadja Popovich, Guardian, 11 September 2015.
+<br/></p>
+
+<p>The information for the years not included in the above file was retrieved from different Wikipedia pages, of the specific single tournament.
+Data for 1969 <b>Australian Open</b> prize money were not available so an estimation has been made, based on the subsequent years and other sources.
+<br/></p>
+
+<p>All imports have been converted from Australian dollars, Britihs Pounds, French Francs and Euro to US dollars according to the Google Finance currency rates at April 20th, 2018.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Grand Slam winners plot</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The one below is a &#39;static&#39; version of the visualization available in the Shiny app: the scatterplot displays the total earnings in US dollars (in millions of US dollars) on the x-axis and the total number of Slam tournaments won on the y-axis. The size of the points represent the age of the player at his first Slam title win and the different colors indicate the maximum number of titles won in the same year by the player.</p>
+
+<p><img src="data:image/png;base64,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" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Some highlights</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The only player to have ever achieved a <b>Grand Slam</b> (all 4 different tournaments in the same year) is <bigger>Rod Laver</bigger>.
+<br/></p>
+
+<p>The <b>youngest</b> player to ever win a Slam tournament was <bigger>Michael Chang</bigger>, who won the Roland Garros Open at the age of 17.
+<br/></p>
+
+<p>The player with <b>most title</b> won (12) and <b>highest earnings</b> is <bigger>Roger Federer</bigger>.
+<br/></p>
+
+<p>The only <b>African player</b> to ever won a Slam tournament is <bigger>Johan Kriek</bigger>, from South Africa.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Prize Money'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Grand Slam winners plot'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Some highlights'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="http://slidifylibraries2.googlecode.com/git/inst/libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
